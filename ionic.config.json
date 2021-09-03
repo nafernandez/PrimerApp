@@ -1,0 +1,7 @@
+{
+  "name": "PrimerApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
