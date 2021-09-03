@@ -14,12 +14,11 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Hola!!</IonTitle>
+          <IonTitle>Hola, bienvenido a la pagina de inicio de sesión!</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen className="ion-padding">
             <IonButton routerLink="/login">Login</IonButton>
-            <IonButton routerLink="/register" color="secondary">Register</IonButton>
       </IonContent>
     </IonPage>
   );
