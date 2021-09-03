@@ -1,22 +1,25 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonButton, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import React, { useEffect, useState } from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
 const Home: React.FC = () => {
+
+  const [input, setInput] = useState<string>("");
+
+  useEffect(()=>{
+    console.log(input);
+  }, [input]);
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Hola!!</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+      <IonContent fullscreen className="ion-padding">
+            <IonButton routerLink="/login">Login</IonButton>
+            <IonButton routerLink="/register" color="secondary">Register</IonButton>
       </IonContent>
     </IonPage>
   );
